@@ -6,6 +6,15 @@
   --bg-light: #f8f9fa;
 }
 
+*{
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden !important;
+}
+
 body {
   font-family: "Tajawal", "Segoe UI", sans-serif;
   color: var(--text-dark);
@@ -14,6 +23,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden !important
+}
+.container, .container-fluid, .row {
+  overflow-x: hidden !important;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .navbar {
@@ -387,4 +404,33 @@ body {
 .team-img:hover {
   transform: scale(1.05);
   border-color: var(--primary-color);
+}
+
+#categoriesBadges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.badge-category {
+  background-color: #b2a260;
+  color: #005a82;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .badge-category {
+    padding: 6px 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
 }
