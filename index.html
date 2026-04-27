@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل فعاليات الجامعة الافتراضية | الرئيسية</title>
+    <link rel="icon" href="assets/img/SVUEG.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+
+      /* style for hero section */
+      .hero-fixed-section {
+        min-height: 85vh;
+        background-color: rgb(168, 204, 228);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+      }
+
+      .hero-content-wrapper {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .hero-logo-img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        object-fit: contain;
+        flex-shrink: 0;
+        background-color: aliceblue;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+      }
+
+      .hero-text-container {
+        flex: 1;
+        min-width: 280px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-text-tagline {
+        font-size: clamp(1.3rem, 4vw, 2rem);
+        font-weight: 700;
+        color: #0a3b5a;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(8px);
+        padding: clamp(0.8rem, 2vw, 1.2rem) clamp(1rem, 3vw, 2rem);
+        border-radius: 48px;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        width: 100%;
+      }
+
+      .hero-text-subtitle {
+        font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+        font-weight: 500;
+        color: #1a5d7a;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(4px);
+        padding: clamp(0.6rem, 1.5vw, 0.8rem) clamp(1rem, 2.5vw, 1.8rem);
+        border-radius: 40px;
+        line-height: 1.7;
+        width: 100%;
+        max-width: 600px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .hero-slogan-img {
+        background-color: aliceblue;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin-top: 50px;
+        padding: 0.5rem;
+        border-radius: 16px;
+      }
+
+      /* responsive for tablets */
+      @media (max-width: 992px) {
+        .hero-content-wrapper {
+          gap: 2rem;
+        }
+        .hero-logo-img {
+          max-width: 380px;
+        }
+      }
+
+      /* responsive for phones */
+      @media (max-width: 768px) {
+        .hero-fixed-section {
+          min-height: auto;
+          padding: 3rem 1rem;
+        }
+        .hero-content-wrapper {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+        .hero-logo-img {
+          max-width: 350px;
+        }
+        .hero-text-container {
+          width: 100%;
+        }
+        .hero-text-tagline {
+          backdrop-filter: blur(4px);
+        }
+        .hero-slogan-img {
+          max-width: 200px;
+          margin-top: 30px;
+        }
+      }
+
+      /* for small phones */
+      @media (max-width: 480px) {
+        .hero-logo-img {
+          max-width: 280px;
+        }
+        .hero-slogan-img {
+          max-width: 160px;
+          margin-top: 20px;
+        }
+      }
+
+      /* for landscape mode */
+      @media (max-height: 600px) and (orientation: landscape) {
+        .hero-fixed-section {
+          min-height: auto;
+          padding: 2rem;
+        }
+        .hero-content-wrapper {
+          gap: 1rem;
+        }
+        .hero-logo-img {
+          max-width: 180px;
+        }
+        .hero-slogan-img {
+          margin-top: 15px;
+        }
+      }
+    </style>
+  </head>
+  
+  <body style="padding-top: 80px">
+    <header style="position: fixed; z-index: 1000; top: 0; width: 100%">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <div
+              style="
+                width: 70px;
+                height: 70px;
+                background: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="assets/img/SVUEG_Logo1.png"
+                alt="شعار الجامعة"
+                style="width: 50px"
+              />
+            </div>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">كل الفعاليات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن الدليل</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero section with logo and text -->
+      <section class="hero-fixed-section">
+        <div class="hero-content-wrapper">
+          <img
+            src="assets/img/SVUEG_MainLogo.png"
+            alt="شعار الجامعة"
+            class="hero-logo-img"
+          />
+
+          <div class="hero-text-container">
+            <p class="hero-text-tagline">
+              دليل فعاليات الجامعة الافتراضية السورية
+            </p>
+            <p class="hero-text-subtitle">
+              اكتشف أحدث المؤتمرات، ورش العمل، والندوات الأكاديمية في مكان واحد.
+              تابع جدول الفعاليات، وسّع مداركك، وكن جزءاً من مجتمع SVU النابض
+              بالحياة.
+            </p>
+            <img
+              class="hero-slogan-img"
+              src="assets/img/slogn.png"
+              alt="شعار اعبر حدود الزمان والمكان"
+            />
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- slider for featured events -->
+      <section class="hero-slider-section" style="margin-top: 30px">
+        <h2 class="section-title text-center mb-4">
+          فعاليات بارزة هذا الاسبوع
+        </h2>
+
+        <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators" id="sliderIndicators"></div>
+          <div class="carousel-inner" id="sliderItems"></div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#eventsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#eventsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- category badges section -->
+      <section class="container my-5">
+        <h2 class="section-title text-center mb-4">تصفح حسب التصنيف</h2>
+        <div class="text-center" id="categoriesBadges"></div>
+      </section>
+
+      <!-- latest events grid -->
+      <section class="container my-5">
+        <h2 class="section-title text-center mb-4">أحدث الفعاليات</h2>
+        <div class="row g-4" id="latestEventsGrid"></div>
+      </section>
+
+      <section class="container my-5">
+        <h2 class="section-title text-center mb-4">القائمين على المشروع</h2>
+        <div class="row g-4">
+           
+      <div class="card mt-4 p-4">
+        <div class="row text-center mt-3">
+          <div class="col-md-4">
+            <img
+              src="assets/img/partners/mohammad_muaaz_288153.png"
+              alt="mohammad_muaaz img"
+              class="team-img"
+            />
+            <h5>محمد معاذ حبوباتي</h5>
+            <p>mohammad_muaaz_288153</p>
+            <p
+              style="
+                line-height: 1.4;
+                max-width: 200px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+              "
+            >
+              قائد الفريق، والمسؤول عن تطوير الصفحة الرئيسية والأحداث
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <img
+              src="assets/img/partners/sara_305271.jpg"
+              alt="sara img"
+              class="team-img"
+            />
+            <h5>سارة الغربي</h5>
+            <p>sara_305271</p>
+            <p
+              style="
+                line-height: 1.4;
+                max-width: 200px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+              "
+            >
+              مسؤولة عن صفحة اتصل بنا، والتنسيقات الجمالية الخاصة بها
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <img
+              src="assets/img/partners/farah_301160.jpg"
+              alt="farah img"
+              class="team-img"
+            />
+            <h5>فرح دهيمش</h5>
+            <p>farah_301160</p>
+            <p
+              style="
+                line-height: 1.4;
+                max-width: 200px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+              "
+            >
+              مسؤولة عن صفحة عن الدليل والتنسيقات الخاصة بها
+            </p>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="./assets/img/SVUEG_Logo.png"
+              alt="SVUEG_Logo"
+              style="height: 100px; border-radius: 20%"
+            />
+            <h5>دليل فعاليات الجامعة الافتراضية</h5>
+            <p>منصتك الأولى لكل فعاليات الجامعة الافتراضية السورية.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="events.html">كل الفعاليات</a></li>
+              <li><a href="about.html">عن الدليل</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>تابعنا</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center mt-4">
+          <p>
+            جميع الحقوق محفوظة © 2026 - دليل فعاليات الجامعة الافتراضية السورية
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // load everything when page ready
+      $(document).ready(() => {
+        if (typeof loadSliderAndLatestEvents === "function")
+          loadSliderAndLatestEvents();
+        if (typeof loadCategories === "function") loadCategories();
+      });
+    </script>
+
+    <!-- scroll to top button -->
+    <div
+      id="backBtn"
+      onclick="window.scrollTo(0, 0)"
+      style="
+        z-index: 100;
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        width: 50px;
+        height: 50px;
+        background: #0a3b5a;
+        color: white;
+        border-radius: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 30px;
+      "
+    >
+      ↑
+    </div>
+
+    <script>
+      // show/hide scroll button
+      var btn = document.getElementById("backBtn");
+
+      window.onscroll = function () {
+        if (document.documentElement.scrollTop > 300) {
+          btn.style.display = "flex";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

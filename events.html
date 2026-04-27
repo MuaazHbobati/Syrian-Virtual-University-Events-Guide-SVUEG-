@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل فعاليات الجامعة الافتراضية | كل الفعاليات</title>
+    <link rel="icon" href="assets/img/SVUEG.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body style="padding-top: 80px">
+    <header style="position: fixed; z-index: 1000; top: 0; width: 100%">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <div
+              style="
+                width: 70px;
+                height: 70px;
+                background: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="assets/img/SVUEG_Logo1.png"
+                alt="شعار الجامعة"
+                style="width: 50px"
+              />
+            </div>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="events.html">كل الفعاليات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن الدليل</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-5">
+      <h1 class="section-title text-center mb-4">جميع الفعاليات</h1>
+
+      <!-- filter bar -->
+      <div class="filters-toolbar bg-light p-3 rounded mb-4">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-4">
+            <label for="filterCategory" class="form-label">التصنيف</label>
+            <select id="filterCategory" class="form-select"></select>
+          </div>
+          <div class="col-md-4">
+            <label for="filterDate" class="form-label">التاريخ</label>
+            <input type="date" id="filterDate" class="form-control" />
+          </div>
+          <div class="col-md-4">
+            <label for="filterCity" class="form-label">المدينة</label>
+            <select id="filterCity" class="form-select"></select>
+          </div>
+          <div class="col-md-4">
+            <button id="applyFiltersBtn" class="btn btn-primary w-100">
+              تصفية
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- events grid -->
+      <div class="row g-4" id="allEventsGrid"></div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="./assets/img/SVUEG_Logo.png"
+              alt="SVUEG_Logo1"
+              style="height: 100px; border-radius: 20%"
+            />
+            <h5>دليل فعاليات الجامعة الافتراضية</h5>
+            <p>منصتك الأولى لكل فعاليات الجامعة الافتراضية السورية.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="events.html">كل الفعاليات</a></li>
+              <li><a href="about.html">عن الدليل</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>تابعنا</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center mt-4">
+          <p>
+            جميع الحقوق محفوظة © 2026 - دليل فعاليات الجامعة الافتراضية السورية
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // load events when page ready
+      $(document).ready(() => {
+        loadAllEventsPage();
+      });
+    </script>
+
+    <!-- scroll to top button -->
+    <div
+      id="backBtn"
+      onclick="window.scrollTo(0, 0)"
+      style="
+        z-index: 100;
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        width: 50px;
+        height: 50px;
+        background: #0a3b5a;
+        color: white;
+        border-radius: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 30px;
+      "
+    >
+      ↑
+    </div>
+
+    <script>
+      // show/hide scroll button
+      var btn = document.getElementById("backBtn");
+
+      window.onscroll = function () {
+        if (document.documentElement.scrollTop > 300) {
+          btn.style.display = "flex";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
