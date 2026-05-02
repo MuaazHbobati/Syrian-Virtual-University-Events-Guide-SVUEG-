@@ -321,3 +321,22 @@ function initContactForm() {
     }
   });
 }
+
+document.addEventListener('click', function(event) {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const toggler = document.querySelector('.navbar-toggler');
+    
+    if (navbarCollapse && navbarCollapse.classList.contains('show') && window.innerWidth < 992) {
+        if (!toggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
+            toggler.click();
+        }
+    }
+});
+
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth < 992) {
+            document.querySelector('.navbar-toggler').click();
+        }
+    });
+});
