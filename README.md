@@ -1,6 +1,6 @@
-# Web Programming 1 Project | BWP401
-
 ## 🎓 Virtual University Events Guide - SVUEG
+
+![Syrian Virtual University Events Directory - Home Page](assets/img/HomePage.png)
 
 This project was developed as a practical application for the **Web Programming 1 (BWP401)** course. It aims to build a complete website that displays events for the Syrian Virtual University using basic web technologies.
 
