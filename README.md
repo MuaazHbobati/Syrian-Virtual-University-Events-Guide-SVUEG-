@@ -33,45 +33,38 @@ Live Demo: [https://muaazhbobati.github.io/Syrian-Virtual-University-Events-Guid
 
 ---
 
-## 📁 Project Structure
+## 📁 Folder Structure
 
-Syrian-Virtual-University-Events-Guide-SVUEG/
-│
-├── index.html
-├── events.html
-├── event.html
-├── about.html
-├── contact.html
-├── README.md
-│
-└── assets/
-    ├── css/
-    │   └── styles.css
-    │
-    ├── js/
-    │   └── main.js
-    │
-    └── img/
-        ├── slogn.png
-        ├── SVUEG_Logo.webp
-        ├── SVUEG_MainLogo.jpg
-        ├── SVUEG.webp
-        │
-        ├── events/
-        │   ├── ai-conf.webp
-        │   ├── art.jpg
-        │   ├── family.jpg
-        │   ├── hack.jpg
-        │   ├── job-fair.jpg
-        │   ├── map.jpg
-        │   ├── music.jpg
-        │   ├── self-dev.jpg
-        │   └── sports.jpg
-        │
-        └── partners/
-            ├── mohammad_muaaz_288153.jpg
-            └── unknown.jpg
-
+**Syrian-Virtual-University-Events-Guide-SVUEG/**
+- index.html
+- events.html
+- event.html
+- about.html
+- contact.html
+- README.md
+- **assets/**
+  - **css/**
+    - styles.css
+  - **js/**
+    - main.js
+  - **img/**
+    - slogn.png
+    - SVUEG_Logo.webp
+    - SVUEG_MainLogo.jpg
+    - SVUEG.webp
+    - **events/**
+      - ai-conf.webp
+      - art.jpg
+      - family.jpg
+      - hack.jpg
+      - job-fair.jpg
+      - map.jpg
+      - music.jpg
+      - self-dev.jpg
+      - sports.jpg
+    - **partners/**
+      - mohammad_muaaz_288153.jpg
+      - unknown.jpg
 ---
 
 ## 🚀 How to Run the Project
