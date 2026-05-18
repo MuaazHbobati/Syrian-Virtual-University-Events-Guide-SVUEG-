@@ -34,23 +34,43 @@ Live Demo: [https://muaazhbobati.github.io/Syrian-Virtual-University-Events-Guid
 ---
 
 ## 📁 Project Structure
-BWP401_Project/
+
+Syrian-Virtual-University-Events-Guide-SVUEG/
 │
-├── index.html # Home page
-├── events.html # All events list
-├── event.html # Event details page
-├── about.html # About the directory
-├── contact.html # Contact us page
+├── index.html
+├── events.html
+├── event.html
+├── about.html
+├── contact.html
+├── README.md
 │
-├── assets/
-│ ├── css/
-│ │ └── styles.css # Custom styles
-│ ├── js/
-│ │ └── main.js # Interactive code
-│ └── img/
-│ └── events/ # Event images
-│
-└── README.md
+└── assets/
+    ├── css/
+    │   └── styles.css
+    │
+    ├── js/
+    │   └── main.js
+    │
+    └── img/
+        ├── slogn.png
+        ├── SVUEG_Logo.webp
+        ├── SVUEG_MainLogo.jpg
+        ├── SVUEG.webp
+        │
+        ├── events/
+        │   ├── ai-conf.webp
+        │   ├── art.jpg
+        │   ├── family.jpg
+        │   ├── hack.jpg
+        │   ├── job-fair.jpg
+        │   ├── map.jpg
+        │   ├── music.jpg
+        │   ├── self-dev.jpg
+        │   └── sports.jpg
+        │
+        └── partners/
+            ├── mohammad_muaaz_288153.jpg
+            └── unknown.jpg
 
 ---
 
